@@ -1,4 +1,5 @@
-from google.colab import files, drive
+if 'google.colab' in globals():
+    from google.colab import files, drive
 import time
 import os
 
