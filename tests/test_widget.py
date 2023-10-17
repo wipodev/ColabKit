@@ -1,5 +1,5 @@
 from unittest.mock import MagicMock, patch
-from src.ColabKit.widget import generate_button
+from src.ColabKit.widget import button
 import ipywidgets as widgets
 import unittest
 
