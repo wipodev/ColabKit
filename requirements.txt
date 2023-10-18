@@ -1,3 +1,4 @@
 ffmpeg-python
 scipy
+moviepy
 ipywidgets
