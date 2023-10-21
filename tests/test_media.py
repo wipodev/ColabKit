@@ -90,7 +90,7 @@ class MediaTestCase(unittest.TestCase):
         result = media.shorten('input_file.mp4', 10, 5, 'output_file.mp4')
         # Assert that the function returned True after executing the FFmpeg process
         mock_print.assert_called_with(
-            "Trimming input_file.mp4 to 5 seconds...")
+            "shorting input_file.mp4 to 5 seconds...")
         # Assert that the remove_file function was called
         self.assertTrue(result)
 
@@ -101,7 +101,7 @@ class MediaTestCase(unittest.TestCase):
         result = media.shorten('input_file.mp4', 10, 5, 'output_file.mp4')
         # Assert that the function returned False after executing the FFmpeg process
         mock_print.assert_called_with(
-            "Trimming input_file.mp4 to 5 seconds...")
+            "shorting input_file.mp4 to 5 seconds...")
         # Assert that the remove_file function was called
         self.assertFalse(result)
 
