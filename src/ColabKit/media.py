@@ -27,7 +27,7 @@ def get_video_resolution(file) -> tuple:
     if "video" == info['codec_type']:
         return (info['width'], info['height'])
     print(
-        f"\033[43m\033[101mFile {file} is not a valid parameter, you must provide an audio file\033[0m")
+        f"\033[43m\033[101mFile {file} is not a valid parameter, you must provide a video file\033[0m")
 
 
 def get_formatted_error(stderr) -> str:
@@ -56,25 +56,26 @@ def convert(input_file: str, output_file: str) -> bool:
 
 
 def shorten(input_file, start, interval, output_file) -> str:
-    print(f"Trimming {input_file} to {interval} seconds...")
+    print(f"shorting {input_file} to {interval} seconds...")
     input_stream = ffmpeg.input(input_file, ss=start)
     output_stream = ffmpeg.output(input_stream, output_file, t=interval)
-    return run_process(output_stream, output_file, "trimmed")
+    return run_process(output_stream, output_file, "shortened")
 
 
 def resize_video(video_path: str, new_resolution: int):
     new_path = f"{video_path.split('.')[0]}_{new_resolution}p.mp4"
     video_resolution = get_video_resolution(video_path)
-    print(f"Video resolution: {video_resolution}")
-    if video_resolution[0] >= 1920 or video_resolution[1] >= 1080:
-        print(f"Resizing video to {new_resolution}p...")
-        new_width = 2 * \
-            int((video_resolution[0] /
-                video_resolution[1] * new_resolution / 2))
-        input_stream = ffmpeg.input(video_path)
-        output_stream = ffmpeg.output(
-            input_stream, new_path, vf=f'scale={new_width}:{new_resolution}', vcodec='libx264')
-        return new_path if run_process(output_stream, new_path, "resized") else False
-    else:
-        print("No need to change the size")
-        return video_path
+    if video_resolution:
+        print(f"Video resolution: {video_resolution}")
+        if video_resolution[0] >= 1920 or video_resolution[1] >= 1080:
+            print(f"Resizing video to {new_resolution}p...")
+            new_width = 2 * \
+                int((video_resolution[0] /
+                    video_resolution[1] * new_resolution / 2))
+            input_stream = ffmpeg.input(video_path)
+            output_stream = ffmpeg.output(
+                input_stream, new_path, vf=f'scale={new_width}:{new_resolution}', vcodec='libx264')
+            return new_path if run_process(output_stream, new_path, "resized") else False
+        else:
+            print("No need to change the size")
+            return video_path
