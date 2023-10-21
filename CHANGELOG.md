@@ -13,7 +13,7 @@ We are thrilled to share this initial version with the Python and Colab communit
 
 **Documentation and Usage:**
 
-For more details on how to use ColabKit and access the complete documentation, please visit [link to documentation](https://github.com/wipodev/ColabKit/tree/main/docs).
+For more details on how to use ColabKit and access the complete documentation, please visit [link to documentation](https://github.com/wipodev/ColabKit).
 
 **Additional Notes:**
 

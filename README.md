@@ -1,8 +1,6 @@
-<p align="center">
+<!-- <p align="center">
   <img src="ColabKit.jpg" alt="ColabKit logo" width="250" height="250">
-</p>
-
----
+</p> -->
 
 # ColabKit
 
@@ -13,10 +11,14 @@ ColabKit is a Python library designed to enhance the experience of working in Go
 You can easily install ColabKit using `pip`. Open a terminal and run:
 
 ```bash
-pip install -i https://test.pypi.org/simple/ ColabKit
+pip install ColabKit
 ```
 
-**Please note**: ColabKit is currently in an alpha testing phase. Make sure to check for updates and newer versions as the library evolves.
+## Test in google colab
+
+You can see the tests carried out on the library in Google Colab through this link
+
+<a href="https://colab.research.google.com/github/wipodev/ColabKit/blob/main/Tests_ColabKit.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Key Features
 
