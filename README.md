@@ -13,7 +13,7 @@ ColabKit is a Python library designed to enhance the experience of working in Go
 You can easily install ColabKit using `pip`. Open a terminal and run:
 
 ```bash
-pip install -i https://test.pypi.org/simple/ ColabKit==0.0.1a0
+pip install -i https://test.pypi.org/simple/ ColabKit
 ```
 
 **Please note**: ColabKit is currently in an alpha testing phase. Make sure to check for updates and newer versions as the library evolves.
