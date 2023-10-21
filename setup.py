@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='ColabKit',
-    version='0.0.1a0',
+    version='0.0.1a1',
     author='Wipodev',
     author_email='ajwipo@gmail.com',
     description='ColabKit: A Python library with essential tools to streamline your work in Google Colab, including functions for managing media, recording audio, generating interactive widgets, and performing common operations in the Colab environment.',
@@ -30,7 +30,6 @@ setup(
     install_requires=[
         'ipywidgets',
         'ffmpeg-python',
-        'moviepy',
         'scipy',
     ],
 )

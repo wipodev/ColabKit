@@ -16,15 +16,15 @@ class WidgetTestCase(unittest.TestCase):
 def test_generate_button_creation(self):
     with patch('ipywidgets.Button', new_callable=MagicMock) as mock_button:
         # Create the button and call the function with the given arguments
-        generate_button(self.text, self.tip, self.style,
-                        self.func, *self.param)
+        button(self.text, self.tip, self.style,
+               self.func, *self.param)
         # Assert that the Button class was called with the expected arguments
         mock_button.assert_called_with(
             description=self.text, button_style=self.style, tooltip=self.tip, icon="erase")
 
     def test_generate_button_function_execution(self):
         # Create button with specified parameters
-        button = generate_button(
+        button = button(
             self.text, self.tip, self.style, self.func, *self.param)
         # Simulate button click
         button.click()

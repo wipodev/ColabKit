@@ -48,13 +48,13 @@ record('recording.wav')
 ### Creating Interactive Buttons
 
 ```python
-from ColabKit.widget import generate_button
+from ColabKit.widget import button
 
 # Create an interactive button
 def my_function():
     print("You clicked the button!")
 
-generate_button("Click Me", "Click to execute my_function", "success", my_function)
+button("Click Me", "Click to execute my_function", "success", my_function)
 ```
 
 ## Documentation

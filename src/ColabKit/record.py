@@ -1,12 +1,14 @@
 from .template import AUDIO_RECORD, SAVED_AUDIO_RECORDING
 from scipy.io.wavfile import read as wav_read, write as wav_write
 from IPython.display import HTML, display
-if 'google.colab' in globals():
-    from google.colab.output import eval_js
 from .utils import wait_for_file
 from base64 import b64decode
+from . import GCOLAB
 import ffmpeg
 import io
+
+if GCOLAB:
+    from google.colab.output import eval_js
 
 
 def get_audio() -> tuple:

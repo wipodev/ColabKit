@@ -1,7 +1,9 @@
-if 'google.colab' in globals():
-    from google.colab import files, drive
+from . import GCOLAB
 import time
 import os
+
+if GCOLAB:
+    from google.colab import files, drive
 
 
 def remove_file(route) -> None:
