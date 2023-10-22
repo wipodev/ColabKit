@@ -1,6 +1,6 @@
-<!-- <p align="center">
-  <img src="ColabKit.jpg" alt="ColabKit logo" width="250" height="250">
-</p> -->
+<p align="center">
+  <img src="https://github.com/wipodev/ColabKit/blob/main/ColabKit.png" alt="ColabKit logo" width="250" height="250">
+</p>
 
 # ColabKit
 
