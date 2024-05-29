@@ -2,7 +2,7 @@
   <img src="https://github.com/wipodev/ColabKit/blob/main/ColabKit.png" alt="ColabKit logo" width="250" height="250">
 </p>
 
-# ColabKit [![Python](https://img.shields.io/pypi/v/ColabKit.svg)](https://pypi.org/project/ColabKit/) [![Downloads](https://static.pepy.tech/badge/ColabKit)](https://pepy.tech/project/ColabKit)
+# ColabKit [![Python](https://img.shields.io/pypi/v/ColabKit.svg)](https://pypi.org/project/ColabKit/) ![PyPI - Downloads](https://img.shields.io/pypi/dm/ColabKit?color=blue)
 
 ColabKit is a Python library designed to enhance the experience of working in Google Colab environments. With ColabKit, you can simplify common tasks, manipulate media, record audio, and create interactive widgets more efficiently.
 
