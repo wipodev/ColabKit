@@ -2,7 +2,12 @@
   <img src="https://github.com/wipodev/ColabKit/blob/main/ColabKit.png" alt="ColabKit logo" width="250" height="250">
 </p>
 
-# ColabKit ![PyPI - Version](https://img.shields.io/pypi/v/ColabKit) ![PyPI - Downloads](https://img.shields.io/pypi/dm/ColabKit) ![PyPI - License](https://img.shields.io/pypi/l/ColabKit)
+# ColabKit
+[![Github release](https://img.shields.io/github/v/release/wipodev/ColabKit?color=0172ad&logo=github&logoColor=white)](https://github.com/wipodev/ColabKit/releases/latest)
+[![PyPI - Version](https://img.shields.io/pypi/v/ColabKit?label=pypi%20release&color=0172ad)](https://pypi.org/project/ColabKit/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/ColabKit?color=0172ad&label=pypi%20downloads)](https://pypi.org/project/ColabKit/)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/wipodev/ColabKit/total?color=0172ad&label=github%20downloads)](https://github.com/wipodev/ColabKit)
+[![License](https://img.shields.io/badge/license-MIT-%230172ad)](https://github.com/wipodev/ColabKit/blob/master/LICENSE)
 
 ColabKit is a Python library designed to enhance the experience of working in Google Colab environments. With ColabKit, you can simplify common tasks, manipulate media, record audio, and create interactive widgets more efficiently.
 
